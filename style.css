@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-Green: hsl(75, 94%, 57%);
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-Grey: hsl(0, 0%, 20%);
+    --neutral-DarkGrey: hsl(0, 0%, 12%);
+    --neutral-OffBlack: hsl(0, 0%, 8%);
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+body{
+    font-size: 14px;
+    line-height: 1.14cm;
+    font-family: "inter", sans-serif;
+    font-weight: var(--fw-400);
+    background-color: var(--neutral-OffBlack);
+    color: var(--neutral-White);
+}
+
+.section{
+    padding: 120px;
+    overflow: hidden;
+}
+
+.page-wrappe{
+    width: 100px;
+    min-height: 100vh;
+}
+
+.center-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-default{
+    margin: 0 auto;
+    padding: 0 24px;
+    max-width: 432px;
+}
+
+.slide{
+    border-radius: 16px;
+    background-color: var(--neutral-DarkGrey);
+    padding: 36px 40px 40px;
+}  
+
+.v-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.figure{
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 92px;
+    max-height: 92px;
+}
+
+.image{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heading-1{
+    font-size: 24px;
+    font-weight: var(--fw-600);
+    margin-bottom: 8px;
+}
+
+.heading-2{
+    color: var(--primary-Green);
+    font-size: 14px;
+    font-weight: var(--fw-700);
+    margin-bottom: 27px;
+}
+
+.para{
+    font-weight: var(--fw-600);
+    margin-bottom: 24px;
+}
+
+.menu-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu-list{
+    list-style: none;
+}
+
+.link{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--neutral-Grey);
+    padding: 15px;
+    text-decoration: none;
+    color: var(--neutral-White);
+    font-weight: var(--fw-700);
+}
+
+.link:hover{
+    background-color: var(--primary-Green);
+    color: var(--neutral-Grey);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        margin-top: 10px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+.att{
+    list-style: none;
+}
